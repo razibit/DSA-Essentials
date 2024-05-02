@@ -1,21 +1,52 @@
 #include<iostream>
 using namespace std;
-//====================Dynamically Allocate an Array of Integers===========
 int main(){
-    int *arrr = new int[5];
-    for(int i=0;i<5;i++){
-        arrr[i] = i+5;
-    }
+    char *str = new char[6];
+    str[0] = 'H';
+    str[1] = 'e';
+    str[2] = 'l';
+    str[3] = 'l';
+    str[4] = 'o';
+    str[5] = '\0';
 
-    cout << "Array elements: ";
-    for(int i=0;i<5;i++){
-        cout << arrr[i] << " ";
-    }
-    cout << endl;
-    delete[] arrr;
-
-    return 0;
+    cout << "String: " <<str << endl;
+    delete[] str;
 }
+//====================Dynamically Allocate an Array of Doubles============
+// int main(){
+//     double *aray = new double[3];
+//     *aray = 1.5;
+//     *(aray+1) = 2.3;
+//     *(aray+2) = 3.3;
+//     cout << "Array elements: " ;
+//     for(int i=0;i<3;i++){
+//         cout << *(aray+i) << " ";
+//     }
+//     cout << endl;
+//     delete[] aray;
+//     return 0;
+    
+// }
+//====================Dynamically Allocate an Array of Integers===========
+// int main(){
+//     int *arrr = new int[5];
+//     for(int i=0;i<5;i++){
+//         arrr[i] = i+5;
+//     }
+
+//     cout << "Array elements: ";
+//     for(int i=0;i<5;i++){
+//         cout << arrr[i] << " ";
+//     }
+//     cout << endl;
+
+//     //Method-2
+//     cout << "Array elements: ";
+//     cout << *arrr << " "<< *(arrr+1) << " "<< *(arrr+2) << " "<< *(arrr+3)<<" "<< *(arrr+4)<< endl;
+//     delete[] arrr;
+
+//     return 0;
+// }
 //==============================Dynamically Allocate an Integer=============
 // int main(){
 //     int *ptr = new int;
